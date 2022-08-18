@@ -36,7 +36,7 @@ btnCreate.addEventListener('click', e => {
       .then(({ number, delay }) => {
         Notiflix.Notify.success(`✅ Fulfilled promise ${number} in ${delay}ms`);
       })
-      .catch(({ pos, delay }) => {
+      .catch(({ number, delay }) => {
         Notiflix.Notify.failure(`❌ Rejected promise ${number} in ${delay}ms`);
       });
   }
